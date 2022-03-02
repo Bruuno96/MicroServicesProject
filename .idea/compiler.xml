@@ -7,12 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hr-worker" />
         <module name="hr-eureka-server" />
+        <module name="api-gatewayzuul" />
         <module name="payroll" />
+        <module name="hr-worker" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gatewayzuul" target="11" />
       <module name="hr-eureka-server" target="11" />
       <module name="hr-worker" target="11" />
       <module name="payroll" target="11" />
@@ -20,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gatewayzuul" options="-parameters" />
       <module name="hr-eureka-server" options="-parameters" />
       <module name="hr-worker" options="-parameters" />
       <module name="payroll" options="-parameters" />
