@@ -4,6 +4,7 @@ import com.bruno.payroll.entities.Payment;
 import com.bruno.payroll.service.PaymentService;
 import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +20,7 @@ public class PaymentResource {
 
     @GetMapping("{workerId}/days/{days}")
     public ResponseEntity<Payment> getPayment(@PathVariable Long workerId, @PathVariable Integer days){
+
         Payment payment = paymentService.getPayment(workerId, days);
         return ResponseEntity.ok().body(payment);
     }
