@@ -1,0 +1,25 @@
+=== EUREKA SERVER ===
+R: serve para as aplicações se registrarem afim de serem encontradas apenas pelo nome tendo ciencia de que as portas dos micro-services estão em modo aleatório.
+
+=== EUREKA CLIENT ===
+R:São os micro-services que irão futuramente se inscrever no eureka server para serem monitorados e encontrados posteriormente
+
+=== RIBBON ===
+R:É o responsável por realizar o balanceamente de carga no micro-serviço em questão. 
+
+=== NETFLIX-ZUUL ===
+R:É o responsável por criar um canal único de entrada na aplicação, conhecido como gateway onde o cliente irá acessar a aplicacao somente por aquela porta. 
+
+=== HYSTRIX ===
+R: Responsável por criar uma rota alternativa em caso de falha em algum dos micro-services. (tolerancia a falhas)
+
+
+
+/*
+Timeout do zuul = 1s
+
+Mesmo o timeout de Hystrix e Ribbon configurado em um microsserviço, se o Zuul não tiver seu timeout configurado, para ele será um problema de timeout. Então precisamos configurar o timeout no Zuul.
+
+Se o timeout estiver configurado somente em Zuul, o Hystrix vai chamar o método alternativo no microsserviço específico.
+
+*/
