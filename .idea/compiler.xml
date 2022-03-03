@@ -29,6 +29,7 @@
       <module name="api-gatewayzuul" options="-parameters" />
       <module name="hr-config-server" options="-parameters" />
       <module name="hr-eureka-server" options="-parameters" />
+      <module name="hr-oauth" options="-parameters" />
       <module name="hr-user" options="-parameters" />
       <module name="hr-worker" options="-parameters" />
       <module name="payroll" options="-parameters" />
