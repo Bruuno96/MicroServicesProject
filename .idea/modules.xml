@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/api-gatewayzuul/api-gatewayzuul.iml" filepath="$PROJECT_DIR$/api-gatewayzuul/api-gatewayzuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-config-server/hr-config-server.iml" filepath="$PROJECT_DIR$/hr-config-server/hr-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-eureka-server/hr-eureka-server.iml" filepath="$PROJECT_DIR$/hr-eureka-server/hr-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hr-user/hr-user.iml" filepath="$PROJECT_DIR$/hr-user/hr-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-worker/hr-worker.iml" filepath="$PROJECT_DIR$/hr-worker/hr-worker.iml" />
       <module fileurl="file://$PROJECT_DIR$/payroll/payroll.iml" filepath="$PROJECT_DIR$/payroll/payroll.iml" />
     </modules>
