@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hr-oauth" />
+        <module name="api-gatewayzuul" />
         <module name="hr-config-server" />
         <module name="hr-eureka-server" />
-        <module name="api-gatewayzuul" />
         <module name="payroll" />
         <module name="hr-worker" />
         <module name="hr-user" />
@@ -19,6 +20,7 @@
       <module name="api-gatewayzuul" target="11" />
       <module name="hr-config-server" target="11" />
       <module name="hr-eureka-server" target="11" />
+      <module name="hr-oauth" target="11" />
       <module name="hr-user" target="11" />
       <module name="hr-worker" target="11" />
       <module name="payroll" target="11" />
