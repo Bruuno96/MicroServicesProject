@@ -1,7 +1,8 @@
 package com.bruno.hrworker.resources;
 
-import com.bruno.hrworker.repository.WorkerRepository;
+
 import com.bruno.hrworker.entities.Worker;
+import com.bruno.hrworker.repository.WorkerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import java.util.List;
 public class WorkerResources {
 
     private static Logger logger = LoggerFactory.getLogger(WorkerResources.class);
+
     @Autowired
     private WorkerRepository workerRepository;
 
